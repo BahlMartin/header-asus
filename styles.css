@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-logo-rog: #f51928;
+    --color-hover-nav:  #FF4C5F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif; ;
+}
+
+/* Resetear los estilos de listas (los puntitos que se ven en cada item) */
+ul, ol{
+    list-style: none;
+}
+
+header{
+    background-color: black;
+    height: 50px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1500px;
+
+}
+
+.header__logo-rog{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__logo-rog svg{
+    fill: var(--color-logo-rog);
+    height: 29.59px;
+}
+
+.header__nav-links{
+    color: white;
+    padding: 0px 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__nav-links__nav-list{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.header__nav-links__nav-lista-item{
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.header__nav-links__nav-lista-item :hover{
+    color: var(--color-hover-nav);
+    cursor: pointer;
+}
+
+.header__container-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__container-icons__logo-asus{
+    padding-right: 20px;
+    border-right: solid 0.5px grey;
+}
+
+.header__container-icons__busqueda{ 
+    margin-right: 16px;
+    margin-left: 16px;
+    padding-top: 1px;
+    padding-left: 1px;
+    background-color: black;
+    border: none;
+
+}
+
+.header__container-icons__busqueda :hover{
+    fill: var(--color-hover-nav);
+    cursor: pointer;
+}
+
+.header__container-icons__busqueda svg{ 
+    fill: white;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.header__container-icons__user{ 
+    margin-right: 16px;
+    padding-top: 1px;
+    padding-left: 1px;
+    background-color: black;
+    border: none;
+}
+
+.header__container-icons__user :hover{
+    fill: var(--color-hover-nav);
+    cursor: pointer;
+}
+.header__container-icons__user svg{ 
+    fill: white;
+    width: 24px;
+    height: 24px;
+    
+}
