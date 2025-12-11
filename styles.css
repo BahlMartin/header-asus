@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --color-logo-rog: #f51928;
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif; ;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Resetear los estilos de listas (los puntitos que se ven en cada item) */
@@ -24,6 +24,7 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
 }
 
 .header__container{
@@ -31,8 +32,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1500px;
-
+    max-width: 1500px;
+    width: 100%;
 }
 
 .header__logo-rog{
@@ -68,6 +69,12 @@ header{
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.header__nav-links__nav-lista-item a{
+    text-decoration: none;
+    color: white;
+}
+
 .header__nav-links__nav-lista-item :hover{
     color: var(--color-hover-nav);
     cursor: pointer;
@@ -81,7 +88,7 @@ header{
 
 .header__container-icons__logo-asus{
     padding-right: 20px;
-    border-right: solid 0.5px grey;
+    border-right: solid 0.5px #797979;
 }
 
 .header__container-icons__busqueda{ 
