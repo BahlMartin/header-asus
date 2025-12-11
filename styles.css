@@ -36,6 +36,16 @@ header{
     width: 100%;
 }
 
+.header__burger{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+.header__burger svg{
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
 .header__logo-rog{
     height: 50px;
     display: flex;
@@ -65,7 +75,7 @@ header{
 }
 
 .header__nav-links__nav-lista-item{
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -75,7 +85,7 @@ header{
     color: white;
 }
 
-.header__nav-links__nav-lista-item :hover{
+.header__nav-links__nav-lista-item:hover{
     color: var(--color-hover-nav);
     cursor: pointer;
 }
@@ -130,4 +140,32 @@ header{
     width: 24px;
     height: 24px;
     
+}
+/* modificacion responsive del header */
+@media screen and (max-width: 1025px) {
+    .header__nav-links {
+        display: none;
+    }
+    .header__container-icons__logo-asus {
+        display: none;
+    }
+    .header__container-icons__user {
+        display: none;
+    }
+    .header{
+        padding: 0px 16px;
+    }
+    .header__container{
+        justify-content: space-between;
+    }
+    .header__container-icons__busqueda {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .header__burger {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
 }
